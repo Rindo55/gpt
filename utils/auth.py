@@ -10,7 +10,7 @@ def auth():
     def decorator(func: callable):
         @wraps(func)
         async def wrapper(update, context):
-            if update.effective_user.username in allowed_users:
+            if update.effective_user.username not in allowed_users:
                 await func(update, context)
             else:
                 await update.message.reply_text(
