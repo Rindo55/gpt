@@ -1,7 +1,7 @@
 from functools import wraps
 import os
 
-allowed_users = pirate_user
+allowed_users = "pirate_user"
 
 
 def auth():
