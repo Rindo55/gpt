@@ -1,8 +1,6 @@
 from functools import wraps
 import os
 
-dotenv.load_dotenv()
-
 allowed_users = 1443454117
 
 
