@@ -1,10 +1,9 @@
 from functools import wraps
-import dotenv
 import os
 
 dotenv.load_dotenv()
 
-allowed_users = os.getenv("ALLOWED_USERS").split(",")
+allowed_users = 1443454117
 
 
 def auth():
