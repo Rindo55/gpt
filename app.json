@@ -1,0 +1,40 @@
+{
+    "name": "Telegram Leecher",
+    "description": "A Telegram Leecher based on Pyrogram",
+    "keywords": [
+      "telegram",
+      "pyrogram",
+      "torrent",
+      "3",
+      "leecher"
+    ],
+    "website": "https://github.com/azamaulanaaa/botkaca",
+    "repository": "https://github.com/azamaulanaaa/botkaca",
+    "env": {
+      "TELEGRAM_API_KEY": {
+        "description": "get this value from https://my.telegram.org",
+        "value": ""
+      },
+      "TELEGRAM_USER_ID": {
+        "description": "get this value from https://my.telegram.org",
+        "value": ""
+      },
+      "SERP_API_KEY": {
+        "description": "get this value from @BotFather",
+        "value": ""
+      },
+      "OPENAI_API_KEY": {
+        "description": "enter pasword or leave it public",
+        "value": "",
+        "required" : false
+      }
+    },
+    "stack": "container",
+    "formation": {
+      "worker": {
+        "quantity": 1,
+        "size": "free"
+      }
+    }
+  }
+  
